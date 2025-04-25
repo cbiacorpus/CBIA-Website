@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Membership</title>
+	<meta name="description" content="An informative website showcasing all the Coastal Bend 
+	India Association (CBIA) has to offer and has done.">
+	<link rel="icon" type="image/jpeg" href="Images/logo.png"> <!---DIFF PATH--->
+	<link rel="stylesheet" href="membership.css">
+</head>
+<body>
+    <div class="navbar"> <!---DIFF PATH--->
+        <a href="About.html" class="nav-button">About Us</a>
+        <a href="Committee.html" class="nav-button">Committee</a>
+        <a href="Event.html" class="nav-button">Events</a>
+        <a href="Membership.html" class="nav-button">Membership</a>
+        <a href="Programs.html" class="nav-button">Programs & Services</a>
+        <a href="Donate.html" class="nav-button">Donate</a>
+        <a href="Gallery.html" class="nav-button">Gallery</a>
+        <a href="ContactUs.html" class="nav-button">Contact Us</a>
+    </div>
+
+    <div class="background"></div>
+
+ <div style="text-align: center;">
+  <div class="highlight-box">
+      <span>Membership</span>
+  </div>
+
+  <div class="content">
+    <div class="toggle-buttons">
+      <button class="tab-button active" onclick="showTab('benefits', this)">Benefits</button>
+      <button class="tab-button" onclick="showTab('join', this)">Join</button>
+    </div>
+
+    <section id="benefits" class="event-section">
+      <h2>🫶🏽 Benefits</h2>
+	<ul class="bullet-space" style="text-align: left;">
+	   <li class="type1">Strengthen Your Connection to Indian Culture and Heritage</li>
+	   <li class="type1">Stay Connected to Your Roots by Celebrating & Preserving The Rich 
+	    Traditions of India.</li>
+	   <li class="type1">Nurture Your Kids & Teach Them About Their Indian Roots</li>
+	   <li class="type1">Provide Your Children With a Sense of Identity & pride By Exposing 
+	    Them to Indian Culture, Language, & Values.</li>
+	   <li class="type1">Participate in Cultural & Community Activities</li>
+	   <li class="type1">Engage in a Variety of Cultural Programs, Social Gatherings, & 
+	    Community Service Initiatives That Bring People Together.</li>
+	   <li class="type1">Celebrate Indian Festivals with The Community</li>
+	   <li class="type1">Take Part in Vibrant Celebrations of Major Indian Festivals: Holi, 
+	    Diwali, Independence Day, & Republic Day, With Family & Friends.</li>
+	   <li class="type1">Attend Special Indian Events & Sports Activities</li>
+	   <li class="type1">Enjoy Exciting Events Such As: Traditional Music & Dance 
+	    Performances, Food Festivals, & Sports Tournaments That Promote Health, Fun, & 
+	    Togetherness.</li>
+	</ul>
+    </section>
+
+    <section id="join" class="event-section hidden">
+      <h2>😄 Join</h2>
+      <p>By joining CBIA, you become part of a welcoming & supportive Indian community that 
+	 values tradition, togetherness, and cultural pride!</p>
+      <div style="text-align: center;">
+      	<a href="https://docs.google.com/forms/d/e/1FAIpQLScNfnEgTmyNjeYs8m1Jzu_psmJQGIQT8wWCaqDgsFiys4GLaA/viewform" target="_blank" 
+      class="member-button">2025 CBIA Membership Form</a>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+  <script>
+    function showTab(tabId, btn) {
+      document.getElementById("benefits").classList.add("hidden");
+      document.getElementById("join").classList.add("hidden");
+      document.getElementById(tabId).classList.remove("hidden");
+
+      document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>

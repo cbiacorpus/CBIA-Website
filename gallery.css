@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sora', sans-serif;
+    color:#597DAA;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    background: transparent;
+    z-index: 1;
+    position: relative;
+}
+
+.nav-button {
+    background: linear-gradient(to bottom, #42a5f5, #1e88e5);
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    background: #1565c0;
+}
+
+.highlight-box 
+{
+    display: inline-block;
+    margin: 20px auto;
+    padding: 15px 25px;
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: white;
+    font-size: 24px;
+    font-weight: bold;
+    color: #BF5700;
+    text-align: center;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.background {
+    background-image: url('Images/About_Us.png'); /* DIFF PATH */
+    background-size: cover;
+    background-position: center 30%; /* Show the top part of the image */
+    background-repeat: no-repeat;
+    background-attachment: scroll; /* Scrolls with the content */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Use 100% height of the container */
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background: transparent;
+    padding-bottom: 100px; /* adjust as needed */
+}
+
+h1 {
+    text-align: center;
+    color: #BF5700;
+    margin-bottom: 30px;
+}
+
+/* Toggle Buttons */
+.toggle-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.tab-button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.tab-button.active {
+    background-color: #42a5f5;
+    color: #fff;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Event Grid Layout */
+.event-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.event-card {
+    width: 100%;
+    max-width: 485px;
+    height: auto;
+    aspect-ratio: 16 / 6; /* maintains consistent shape */
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    padding: 25px 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.event-card h3 {
+    font-size: 22px;
+    margin: 0;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.repub-day {
+  background-image: url('Images/RepublicDay_2025(3).png'); /* DIFF PATH */
+  background-position: center 35%;
+}
+
+.holi {
+  background-image: url('Images/Holi_2025(5).png'); /* DIFF PATH */
+  background-position: center 65%;
+}
+
+.ind-day {
+  background-image: url('Images/independence-day.png'); /* DIFF PATH */
+  background-position: center 18%;
+}
+
+.diwali {
+  background-image: url('Images/Diwali_2025(4_).png'); /* DIFF PATH */
+}
+
+.harvey {
+  background-image: url('Images/HarveyRelief_2017(1_).png'); /* DIFF PATH */
+}
+
+.food-bank {
+  background-image: url('Images/FoodBank_2017(1_).png'); /* DIFF PATH */
+}
+
+.picnic {
+  background-image: url('Images/BeachPicnic_2017(2_).png'); /* DIFF PATH */
+}
+
+.scl-mda {
+  background-image: url('Images/SocialMediaWork_2017(1_).png'); /* DIFF PATH */
+}
+
+.badmin {
+  background-image: url('Images/BadminTournament_2024.png'); /* DIFF PATH */
+}
+
+/* Popup Container */
+.popup {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(200, 107, 22, 0.85);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Popup content box */
+.popup-content {
+    position: relative;
+    background-color: #F5A62E; 
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-family: Sora;
+    font-size: 20px;
+    max-height: 80vh;
+    overflow-y: auto; /* scrolling */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer; 
+}
+
+/* Popup images */
+.popup-content img {
+    width: 90%;
+    max-width: 600px;
+    height: auto; 
+    margin: 10px auto;
+    display: block;
+    border-radius: 8px;
+    cursor: pointer; 
+}
+
+/* Close Button Styling */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 42px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+/* Add hover effect for close button */
+.close-btn:hover {
+    color: red;
+    cursor: pointer;
+}
+
+/* Utility */
+.hidden {
+    display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .nav-button {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+        font-size: 16px;
+        padding: 8px 14px;
+    }
+
+    .main {
+        padding: 0 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .toggle-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .tab-button {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .event-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .event-card {
+        padding: 15px;
+        aspect-ratio: 16 / 6;
+        max-width: 90%;
+    }
+
+    .event-card h3 {
+        font-size: 18px;
+    }
+
+    .event-card p {
+        font-size: 14px;
+    }
+
+    .badge {
+        font-size: 12px;
+        padding: 5px 10px;
+        top: 15px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .nav-button {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+        font-size: 16px;
+        padding: 8px 14px;
+    }
+
+    .tab-button {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .event-card {
+        padding: 15px;
+    }
+
+    .event-card h3 {
+        font-size: 16px;
+    }
+
+    .event-card p {
+        font-size: 13px;
+    }
+}
