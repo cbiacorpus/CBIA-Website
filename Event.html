@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Events</title>
-  <link rel="icon" href="Images/logo.png" type="image/png"/> <!---DIFF PATH--->
+  <link rel="icon" href="Images/logo.png" type="image/png" /> <!---DIFF PATH--->
   <link rel="stylesheet" href="event.css">
 </head>
 <body>
@@ -15,7 +15,8 @@
         <a href="Committee.html" class="nav-button">Committee</a>
         <a href="Event.html" class="nav-button">Events</a>
         <a href="Membership.html" class="nav-button">Membership</a>
-        <a href="Programs.html" class="nav-button">Programs & Services</a>
+        <a href="Programs.html" class="nav-button">Programs & 
+	 Services</a>
         <a href="Donate.html" class="nav-button">Donate</a>
 	<a href="Gallery.html" class="nav-button">Gallery</a>
         <a href="ContactUs.html" class="nav-button">Contact Us</a>
@@ -25,162 +26,158 @@
   <div class="highlight-box">
       <span>Events</span>
   </div>
-  </div>
+</div>
+
 
   <div class="main">
-      <div class="toggle-buttons">
-      	   <button class="tab-button active" onclick="showTab('upcoming', this)">Upcoming Events</button>
-      	   <button class="tab-button" onclick="showTab('past', this)">Past Events</button>
-      </div>
 
-      <!-- Upcoming Events -->
-      <section id="upcoming">
+    <div class="toggle-buttons">
+      <button class="tab-button active" onclick="showTab('upcoming', this)">Upcoming Events</button>
+      <button class="tab-button" onclick="showTab('past', this)">Past Events</button>
+    </div>
+
+    <!-- Upcoming Events -->
+    <section id="upcoming">
       <div class="event-grid">
+        <div class="event-card">
+          <span class="badge">Upcoming</span>
+          <h3>Volleyball Tournament</h3>
+          <p>Date: April 26, 2025</p>
+          <p>Time: TBA</p>
+          <p>Venue: Sokol Gymnasium</p>
+          <p>Join us for a friendly volleyball tournament and community fun!</p>
+        </div>
 
-           <!-- VOLLEYBALL TOURNAMENT 2025 -->
-           <div class="event-card">
-           <span class="badge">Upcoming</span>
-             	<h3>Volleyball Tournament</h3>
-             	<p>Date: April 26, 2025</p>
-             	<p>Time: TBA</p>
-             	<p>Venue: Sokol Gymnasium</p>
-             	<p>Join us for a friendly volleyball tournament and community fun!</p>
-           </div>
+         <div class="event-card">
+          <span class="badge">Upcoming</span>
+          <h3>CBIA Pinic</h3>
+          <p>Date: May 10th, 2025</p>
+          <p>Time: 5 PM onwards</p>
+          <p>Venue: Rockport Beach</p>
+          <p>Come and join us for fun, food, and games at beautiful Rockport Beach!</p>
+        </div>
 
-           <!-- CBIA PICNIC 2025 -->
-           <div class="event-card">
-           <span class="badge">Upcoming</span>
-             	<h3>CBIA Picnic</h3>
-          	<p>Date: May 10th, 2025</p>
-          	<p>Time: 5 PM onwards</p>
-          	<p>Venue: Rockport Beach</p>
-          	<p>Come and join us for fun, food, and games at beautiful Rockport Beach!</p>
-           </div>
 
-           <!-- INDEPENDENCE DAY 2025 -->
-           <div class="event-card">
-           <span class="badge">Upcoming</span>
-          	<h3>Independence Day</h3>
-          	<p>Date: August 16th, 2025</p>
-          	<p>Time: TBA</p>
-          	<p>Venue: TBA</p>
-          	<p>Come and celebrate India's 77th Independence day with us!</p>
-           </div>
+        <div class="event-card">
+          <span class="badge">Upcoming</span>
+          <h3>Independence Day</h3>
+          <p>Date: August 16th, 2025</p>
+          <p>Time: TBA</p>
+          <p>Venue: TBA</p>
+          <p>Come and celebrate India's 77th Independence day with us!</p>
+        </div>
 
-           <!-- BADMINTON TOURNAMENT 2025 -->
-           <div class="event-card">
-           <span class="badge">Upcoming</span>
-          	<h3>Badminton Tournament</h3>
-          	<p>Date: August 23rd, 2025</p>
-          	<p>Time: TBA</p>
-          	<p>Venue: Sokol Gymnasium</p>
-          	<p>Join us for a friendly badminton tournament and community fun!</p>
-           </div>
+        <div class="event-card">
+          <span class="badge">Upcoming</span>
+          <h3>Badminton Tournament</h3>
+          <p>Date: August 23rd, 2025</p>
+          <p>Time: TBA</p>
+          <p>Venue: Sokol Gymnasium</p>
+          <p>Join us for a friendly badminton tournament and community fun!</p>
+        </div>
+      
+        <div class="event-card">
+          <span class="badge">Upcoming</span>
+          <h3>Diwali</h3>
+          <p>Date: Ocotober 25th, 2025</p>
+          <p>Time: TBA</p>
+          <p>Venue: TBA</p>
+          <p>Beautiful performances, traditional food, and diya lighting!</p>
+        </div>
 
-           <!-- DIWALI 2025 --> 
-           <div class="event-card">
-           <span class="badge">Upcoming</span>
-          	<h3>Diwali</h3>
-          	<p>Date: October 25th, 2025</p>
-          	<p>Time: TBA</p>
-          	<p>Venue: TBA</p>
-          	<p>Beautiful performances, traditional food, and diya lighting!</p>
-           </div>
+
       </div>
-      </section>
+    </section>
 
-      <!-- PAST EVENTS -->
-      <section id="past" class="hidden">
-      <div class="event-grid">
+    <!-- PAST EVENTS -->
+<section id="past" class="hidden">
+  <div class="event-grid">
 
-           <!-- HOLI AND SPORTS DAY -->
-           <div class="event-card">
-           <span class="badge past">Past</span>
-           <a href="./Gallery.html#holi" class="event-link" onclick="sessionStorage.setItem('fromEventsPage', 'true'); sessionStorage.setItem('showPastEvents', 'true');"> <!---DIFF PATH--->
-        	<h3>Holi and Sports Day 2025</h3>
-        	<p>Fun games, music, and community lunch at the beach park.</p>
-           </a>
-           </div>
+    <!-- HOLI AND SPORTS DAY -->
+    <a href="./Gallery.html#holi" class="event-link" onclick="sessionStorage.setItem('fromEventsPage', 'true'); sessionStorage.setItem('showPastEvents', 'true');"> <!---DIFF PATH--->
+      <div class="event-card">
+        <span class="badge past">Past</span>
+        <h3>Holi and Sports Day 2025</h3>
+        <p>Fun games, music, and community lunch at the beach park.</p>
+      </div>
+    </a>
 
-           <!-- BEACH PICNIC -->
-           <div class="event-card">
-           <span class="badge past">Past</span>
-           <a href="./Gallery.html#beach" class="event-link" onclick="sessionStorage.setItem('fromEventsPage', 'true'); sessionStorage.setItem('showPastEvents', 'true');"> <!---DIFF PATH--->
-        	<h3>Beach Picnic </h3>
-        	<p>Fun games, music, and food at the beach.</p>
-           </a>
-           </div>
+    <!-- BEACH PICNIC -->
+    <a href="./Gallery.html#beach" class="event-link" onclick="sessionStorage.setItem('fromEventsPage', 'true'); sessionStorage.setItem('showPastEvents', 'true');"> <!---DIFF PATH--->
+      <div class="event-card">
+        <span class="badge past">Past</span>
+        <h3>Beach Pinic </h3>
+        <p>Fun games, music, and food at the beach.</p>
+      </div>
+    </a>
 
-           <!-- INDEPENDENCE DAY -->
-           <div class="event-card">
-           <span class="badge past">Past</span>
-           <a href="./Gallery.html#independence" class="event-link" onclick="sessionStorage.setItem('fromEventsPage', 'true'); sessionStorage.setItem('showPastEvents', 'true');"> <!---DIFF PATH--->
-        	<h3>Independence Day</h3>
-        	<p>Patriotic performances, delicious Indian snacks, and activities that honors 
-		our heritage and freedom.</p>
-           </a>
-           </div>
+    <!-- INDEPENDENCE DAY -->
+    <a href="./Gallery.html#independence" class="event-link" onclick="sessionStorage.setItem('fromEventsPage', 'true'); sessionStorage.setItem('showPastEvents', 'true');"> <!---DIFF PATH--->
+      <div class="event-card">
+        <span class="badge past">Past</span>
+        <h3>Independence Day</h3>
+        <p>Patriotic performances, delicious Indian snacks, and activities that honors our heritage and freedom.</p>
+      </div>
+    </a>
 
-           <!-- REPUBLIC DAY --> 
-           <div class="event-card">
-           <span class="badge past">Past</span>
-           <a href="./Gallery.html#republic" class="event-link" onclick="sessionStorage.setItem('fromEventsPage', 'true'); sessionStorage.setItem('showPastEvents', 'true');"> <!---DIFF PATH--->
-        	<h3>Republic Day</h3>
-        	<p>Patriotic performances, delicious Indian snacks, and activities that honors 
-		our heritage and freedom.</p>
-           </a>
-           </div>
 
-           <!-- DIWALI NIGHT  -->
-           <div class="event-card">
-           <span class="badge past">Past</span>
-           <a href="./Gallery.html#diwali" class="event-link" onclick="sessionStorage.setItem('fromEventsPage', 'true'); sessionStorage.setItem('showPastEvents', 'true');"> <!---DIFF PATH--->
-        	<h3>Diwali</h3>
-        	<p>Cultural performances, patriotic tributes, and a celebration of unity.</p>
-           </a>
-           </div>
+     <!-- REPUBLIC DAY --> 
+     <a href="./Gallery.html#republic" class="event-link" onclick="sessionStorage.setItem('fromEventsPage', 'true'); sessionStorage.setItem('showPastEvents', 'true');"> <!---DIFF PATH--->
+      <div class="event-card">
+        <span class="badge past">Past</span>
+        <h3>Republic Day</h3>
+        <p>Patriotic performances, delicious Indian snacks, and activities that honors our heritage and freedom.</p>
+      </div>
+    </a>
 
-           <!-- SOCIAL MEDIA WORKSHOP -->
-           <div class="event-card">
-           <span class="badge past">Past</span>
-           <a href="./Gallery.html#socialmedia" class="event-link" onclick="sessionStorage.setItem('fromEventsPage', 'true'); sessionStorage.setItem('showPastEvents', 'true');"> <!---DIFF PATH--->
-        	<h3>Workshops</h3>
-        	<p>Learning sessions, skill-building activities, and inspiring talks on culture, 
-		wellness, and personal growth.</p>
-           </a>
-           </div>
+    <!-- DIWALI NIGHT  -->
+    <a href="./Gallery.html#diwali" class="event-link" onclick="sessionStorage.setItem('fromEventsPage', 'true'); sessionStorage.setItem('showPastEvents', 'true');"> <!---DIFF PATH--->
+      <div class="event-card">
+        <span class="badge past">Past</span>
+        <h3>Diwali</h3>
+        <p>Cultural performances, patriotic tributes, and a celebration of unity.</p>
+      </div>
+    </a>
 
-           <!--  HURRICANE HARVEY RELIEF -->
-           <div class="event-card">
-           <span class="badge past">Past</span>
-           <a href="./Gallery.html#harvey" class="event-link" onclick="sessionStorage.setItem('fromEventsPage', 'true'); sessionStorage.setItem('showPastEvents', 'true');"> <!---DIFF PATH--->
-        	<h3>Hurricane Harvey Relief</h3>
-        	<p>United as a community to provide food, supplies, and support to those 
-		affected by the storm, showing compassion and resilience in a time of need.</p>
-           </a>
-           </div>
+     <!-- SOCIAL MEDIA WORKSHOP -->
+     <a href="./Gallery.html#socialmedia" class="event-link" onclick="sessionStorage.setItem('fromEventsPage', 'true'); sessionStorage.setItem('showPastEvents', 'true');"> <!---DIFF PATH--->
+      <div class="event-card">
+        <span class="badge past">Past</span>
+        <h3>Workshops</h3>
+        <p>Learning sessions, skill-building activities, and inspiring talks on culture, wellness, and personal growth.</p>
+      </div>
+    </a>
+
+     <!--  HURRICANE HARVEY RELIEF -->
+     <a href="./Gallery.html#harvey" class="event-link" onclick="sessionStorage.setItem('fromEventsPage', 'true'); sessionStorage.setItem('showPastEvents', 'true');"> <!---DIFF PATH--->
+      <div class="event-card">
+        <span class="badge past">Past</span>
+        <h3>Hurrican Harvey Relief</h3>
+        <p>United as a community to provide food, supplies, and support to those affected by the storm, showing compassion and resilience in a time of need.</p>
+      </div>
+    </a>
      
-           <!--  FOOD BANK VOLUNTEERING -->
-           <div class="event-card">
-           <span class="badge past">Past</span>
-           <a href="./Gallery.html#foodbank" class="event-link" onclick="sessionStorage.setItem('fromEventsPage', 'true'); sessionStorage.setItem('showPastEvents', 'true');"> <!---DIFF PATH--->
-        	<h3>Food Bank Volunteering</h3>
-        	<p>Made a difference by lending hands and hearts at the food bank — packing 
-		meals and spreading hope to those in need.</p>
-           </a>
-           </div>
-
-           <!--  BADMINTON TOURNAMENT -->
-           <div class="event-card">
-           <span class="badge past">Past</span>
-           <a href="./Gallery.html#badmin" class="event-link" onclick="sessionStorage.setItem('fromEventsPage', 'true'); sessionStorage.setItem('showPastEvents', 'true');"> <!---DIFF PATH--->
-        	<h3>Badminton Tournament 2024</h3>
-        	<p>A friendly badminton tournament and community fun.</p>
-           </a>
-           </div>
+     <!--  FOOD BANK VOLUNTEERING -->
+     <a href="./Gallery.html#foodbank" class="event-link" onclick="sessionStorage.setItem('fromEventsPage', 'true'); sessionStorage.setItem('showPastEvents', 'true');"> <!---DIFF PATH--->
+      <div class="event-card">
+        <span class="badge past">Past</span>
+        <h3>Food Bank Volunteering</h3>
+        <p>Made a difference by lending hands and hearts at the food bank — packing meals and spreading hope to those in need.</p>
       </div>
-      </section>
+    </a>
+
+     <!--  BADMINTON TOURNAMENT -->
+     <a href="./Gallery.html#badmin" class="event-link" onclick="sessionStorage.setItem('fromEventsPage', 'true'); sessionStorage.setItem('showPastEvents', 'true');"> <!---DIFF PATH--->
+      <div class="event-card">
+        <span class="badge past">Past</span>
+        <h3>Badminton Tournament 2024</h3>
+        <p>A friendly badminton tournament and community fun.</p>
+      </div>
+    </a>
+
   </div>
+</section>
+
 
 <script>
   function showTab(id, btn) {
