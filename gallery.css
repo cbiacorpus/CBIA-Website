@@ -247,17 +247,14 @@ h1 {
     display: none;
 }
 
-/* FORCE event grid to always show cards in 2-column layout */
-.event-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+/* Extra cleanup: remove any margin or block-breaks inside grid */
+.event-grid > * {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  box-sizing: border-box;
 }
 
-/* Ignore anything inside event-grid that isn't a card */
-.event-grid > *:not(.event-card) {
-  display: none !important;
-}
 
 /* Responsive Styles */
 @media (max-width: 768px) {
