@@ -71,7 +71,8 @@ window.addEventListener("DOMContentLoaded", () => {
         "#foodbank": "fbnkPopup",
         "#beach": "picnicPopup",
         "#socialmedia": "sclmdaPopup",
-        "#badmin": "badminPopup"
+        "#badmin": "badminPopup",
+	"#volley": "volleyPopup",
         // Add more mappings if needed
     };
 
