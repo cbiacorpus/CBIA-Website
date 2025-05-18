@@ -181,8 +181,7 @@ h1 {
 }
 
 .volley {
-  background-image: url('Images/Volleyball_2025(1).png'); /* Adjust path/filename if needed */
-  background-position: center 30%;
+  background-image: url('Images/Volleyball_2025(1).png');
 }
 
 /* Popup Container */
