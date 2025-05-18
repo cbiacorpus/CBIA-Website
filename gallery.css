@@ -180,6 +180,11 @@ h1 {
   background-image: url('Images/BadminTournament_2024.png'); /* DIFF PATH */
 }
 
+.volley {
+  background-image: url('Images/Volleyball_2025(1).png'); /* Adjust path/filename if needed */
+  background-position: center 30%;
+}
+
 /* Popup Container */
 .popup {
     display: none; 
