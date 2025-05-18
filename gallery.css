@@ -247,6 +247,16 @@ h1 {
     display: none;
 }
 
+/* Prevent popup elements inside .event-grid from breaking grid layout */
+.event-grid > .popup {
+  display: none;
+}
+
+/* (Optional, just for safety) Ensure event cards behave properly in grid */
+.event-grid > .event-card {
+  display: block;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .navbar {
