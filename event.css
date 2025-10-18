@@ -160,6 +160,47 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s ease;
 }
 
+/* Flex container for Diwali buttons */
+.diwali-button-group {
+  display: flex;
+  gap: 12px;              /* space between buttons */
+  flex-wrap: wrap;        /* wrap nicely on small screens */
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+/* Primary button (Buy Tickets) */
+.diwali-btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.6rem;
+  background: linear-gradient(90deg, #ff5e62, #ff9966);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.25s ease-in-out;
+  border: 2px solid transparent;
+}
+
+/* Hover animation */
+.diwali-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 94, 98, 0.3);
+  opacity: 0.95;
+}
+
+/* Outline style for "Sponsor this event" */
+.diwali-btn-outline {
+  background: #fff;
+  color: #ff5e62;
+  border: 2px solid #ff5e62;
+}
+
+.diwali-btn-outline:hover {
+  background: linear-gradient(90deg, #ff5e62, #ff9966);
+  color: #fff;
+}
+
 
 /* Badges */
 .badge {
