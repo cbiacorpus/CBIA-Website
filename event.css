@@ -127,8 +127,10 @@ h1, h2, h3, h4, h5, h6 {
 .event-card h3 {
     font-size: 22px;
     margin: 0 0 10px;
-    color:#BF5700; 
+    color:#BF5700;
+    padding-right: 90px; /* <-- This is the fix */
 }
+
 
 
 .event-card p {
