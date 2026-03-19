@@ -109,18 +109,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Event Grid Layout */
+/* Event Grid Layout */
 .event-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr; /* mobile: single column */
   gap: 20px;
 }
 
-@media (min-width: 768px) {
-  .event-grid {
-    grid-template-columns: 1fr 1fr; /* 2 columns on larger screens */
-  }
+/* Make first card (Holi) full width ALWAYS */
+.event-card:first-child {
+  grid-column: 1 / -1;
 }
 
+/* Desktop layout */
+@media (min-width: 768px) {
+  .event-grid {
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+  }
+}
 .event-card {
     background: #ffffff;
     border-radius: 20px;
