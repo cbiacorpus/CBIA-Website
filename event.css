@@ -110,9 +110,15 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Event Grid Layout */
 .event-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .event-grid {
+    grid-template-columns: 1fr 1fr; /* 2 columns on larger screens */
+  }
 }
 
 .event-card {
