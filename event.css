@@ -108,23 +108,20 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
 }
 
-/* Event Grid Layout */
-/* Event Grid Layout */
 .event-grid {
   display: grid;
-  grid-template-columns: 1fr; /* mobile: single column */
+  grid-template-columns: 1fr;
   gap: 20px;
 }
 
-/* Make first card (Holi) full width ALWAYS */
-.event-card:first-child {
+/* 🔥 FIXED selector */
+.event-grid > .event-card:first-of-type {
   grid-column: 1 / -1;
 }
 
-/* Desktop layout */
 @media (min-width: 768px) {
   .event-grid {
-    grid-template-columns: 1fr 1fr; /* 2 columns */
+    grid-template-columns: 1fr 1fr;
   }
 }
 .event-card {
