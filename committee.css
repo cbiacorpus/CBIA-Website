@@ -154,7 +154,7 @@ h1, h2, h3, h4, h5, h6 {
     border: none;
     border-radius: 0;
     margin: 0;
-    transform: translateY(-8px);
+    transform: translateY(-12px);
     display: block;
 }
 
