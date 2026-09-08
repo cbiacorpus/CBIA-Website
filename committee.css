@@ -134,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 2px 0 0;
 }
 
-/* Vice President photo crop */
+/* Vice President photo - same oval look as the President */
 .vp-photo-frame {
     width: 160px;
     height: 180px;
@@ -143,17 +143,22 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
     margin-bottom: 10px;
     transform: translateY(12px);
+    background: white;
 }
 
-.vp-photo-frame img {
+/* Important: override the normal .committee-member img rule */
+.committee-member .vp-photo-frame .vp-main-img {
     width: 100%;
-    height: 100%;
+    height: 230px;
+    max-width: none;
     object-fit: cover;
-    object-position: center 18%;
-    border: none;
+    object-position: center top;
+    border: 0;
     border-radius: 0;
     margin: 0;
-    transform: scale(1.28);
+    transform: translateY(-18px);
+    transition: none;
+    display: block;
 }
 
 /* Popup Styling */
@@ -204,21 +209,27 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 
-/* Vice President popup photo crop */
+/* Vice President popup photo - match Utpal's popup */
 .vp-popup-photo {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto;
+    background: white;
 }
 
-.vp-popup-photo img {
+.vp-popup-photo .vp-popup-img {
     width: 100%;
-    height: 100%;
+    height: 255px;
+    max-width: none;
     object-fit: cover;
-    object-position: center 18%;
-    transform: scale(1.28);
+    object-position: center top;
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    transform: translateY(-20px);
+    display: block;
 }
 
 .fun-fact-label {
@@ -308,6 +319,23 @@ h1, h2, h3, h4, h5, h6 {
     .vp-photo-frame {
         width: 120px;
         height: 140px;
+    }
+
+    .committee-member .vp-photo-frame .vp-main-img {
+        width: 100%;
+        height: 180px;
+        transform: translateY(-14px);
+    }
+
+    .vp-popup-photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .vp-popup-photo .vp-popup-img {
+        width: 100%;
+        height: 195px;
+        transform: translateY(-15px);
     }
 
     .popup-content {
