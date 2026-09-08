@@ -134,6 +134,28 @@ h1, h2, h3, h4, h5, h6 {
     margin: 2px 0 0;
 }
 
+/* Vice President photo crop */
+.vp-photo-frame {
+    width: 160px;
+    height: 180px;
+    border-radius: 50% / 60%;
+    border: 3px solid #333;
+    overflow: hidden;
+    margin-bottom: 10px;
+    transform: translateY(12px);
+}
+
+.vp-photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 18%;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    transform: scale(1.28);
+}
+
 /* Popup Styling */
 .popup {
     display: none;
@@ -180,6 +202,23 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 50%;
     display: block;
     margin: 0 auto;
+}
+
+/* Vice President popup photo crop */
+.vp-popup-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.vp-popup-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 18%;
+    transform: scale(1.28);
 }
 
 .fun-fact-label {
@@ -256,6 +295,17 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .committee-member img {
+        width: 120px;
+        height: 140px;
+    }
+
+    .leadership-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .vp-photo-frame {
         width: 120px;
         height: 140px;
     }
