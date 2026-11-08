@@ -131,6 +131,66 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     position: relative;
     box-sizing: border-box;
+    min-width: 0;              /* lets grid items shrink to the screen width */
+    max-width: 100%;
+    overflow-wrap: anywhere;   /* long links/words wrap instead of widening the card */
+}
+
+.event-grid > * {
+    min-width: 0;
+}
+
+/* Diwali flyer + content */
+.event-flyer {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 10px 0 20px;
+}
+
+.diwali-card h4 {
+    font-size: 20px;
+    margin: 0 0 15px;
+    line-height: 1.35;
+}
+
+.diwali-card h5 {
+    font-size: 17px;
+    margin: 22px 0 8px;
+}
+
+.diwali-card p,
+.diwali-card li {
+    line-height: 1.6;
+}
+
+.diwali-card ul {
+    margin: 8px 0;
+    padding-left: 22px;
+    color: #597DAA;
+    font-size: 15px;
+}
+
+.diwali-card .schedule-list,
+.diwali-card .ticket-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.diwali-card .schedule-list li,
+.diwali-card .ticket-list li {
+    margin-bottom: 8px;
+}
+
+.diwali-card .menu-list {
+    columns: 2;
+    column-gap: 20px;
+}
+
+.diwali-card a:not(.diwali-btn) {
+    color: #BF5700;
 }
 
 .event-card h3 {
@@ -289,6 +349,25 @@ h1, h2, h3, h4, h5, h6 {
         top: 15px;
         right: 15px;
     }
+
+    .diwali-card h4 {
+        font-size: 17px;
+    }
+
+    .diwali-card h5 {
+        font-size: 16px;
+    }
+
+    .diwali-card ul {
+        font-size: 14px;
+    }
+
+    .diwali-btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
 }
 
 @media (max-width: 480px) {
@@ -322,5 +401,9 @@ h1, h2, h3, h4, h5, h6 {
 
     .event-card p {
         font-size: 13px;
+    }
+
+    .diwali-card .menu-list {
+        columns: 1;
     }
 }
